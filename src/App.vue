@@ -1,5 +1,9 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import german from "element-plus/es/locale/lang/de"
+</script>
 
-<template></template>
+<template>
+  <el-config-provider :locale="german"></el-config-provider>
+</template>
 
 <style scoped></style>

@@ -3,3 +3,5 @@
 /dist/
 /node_modules/
 /*.iml
+/auto-imports.d.ts
+/components.d.ts
