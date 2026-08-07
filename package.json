@@ -1,0 +1,34 @@
+{
+  "name": "rentenrechner",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dependencies:update": "npx npm-check-updates -u -c 48h && npm install",
+    "vite:run": "vite",
+    "vite:build": "vite build",
+    "types:check": "vue-tsc --noEmit",
+    "oxlint:check": "oxlint .",
+    "oxlint:fix": "oxlint . --fix",
+    "prettier:check": "prettier . --check",
+    "prettier:fix": "prettier . --write"
+  },
+  "dependencies": {
+    "vue": "3.5.41"
+  },
+  "devDependencies": {
+    "@tsconfig/node24": "24.0.4",
+    "@types/node": "26.1.2",
+    "@vitejs/plugin-vue": "6.0.8",
+    "@vue/tsconfig": "0.9.1",
+    "jiti": "2.7.0",
+    "oxlint": "1.77.0",
+    "prettier": "3.9.6",
+    "typescript": "7.0.2",
+    "vite": "8.2.0",
+    "vue-tsc": "3.3.9"
+  },
+  "engines": {
+    "node": "^22.18.0 || >=24.12.0"
+  }
+}
