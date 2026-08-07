@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+  <!-- Rechner-Körper -->
+  <rect x="2" y="1" width="12" height="14" rx="2" fill="#337ecc"/>
+
+  <!-- Display -->
+  <rect x="4" y="3" width="8" height="3" rx="0.5" fill="#a0cfff"/>
+
+  <!-- Tasten-Raster (4 klare Punkte) -->
+  <circle cx="5.5" cy="8.5" r="1.5" fill="#ffffff"/>
+  <circle cx="10.5" cy="8.5" r="1.5" fill="#ffffff"/>
+  <circle cx="5.5" cy="12.5" r="1.5" fill="#ffffff"/>
+  <!-- Highlight-Taste (z.B. '=' oder 'Summe') -->
+  <circle cx="10.5" cy="12.5" r="1.5" fill="#95d475"/>
+</svg>
