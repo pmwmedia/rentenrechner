@@ -11,8 +11,8 @@
     "types:check": "vue-tsc --noEmit",
     "oxlint:check": "oxlint .",
     "oxlint:fix": "oxlint . --fix",
-    "prettier:check": "prettier . --check",
-    "prettier:fix": "prettier . --write",
+    "oxfmt:check": "oxfmt --check",
+    "oxfmt:fix": "oxfmt --write",
     "test:watch": "vitest --watch",
     "test:run": "vitest run"
   },
@@ -28,6 +28,7 @@
     "@vitejs/plugin-vue": "6.0.8",
     "@vue/tsconfig": "0.9.1",
     "jiti": "2.7.0",
+    "oxfmt": "0.62.0",
     "oxlint": "1.77.0",
     "prettier": "3.9.6",
     "typescript": "6.0.3",
