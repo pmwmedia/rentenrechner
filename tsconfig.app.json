@@ -4,7 +4,8 @@
   "compilerOptions": {
     // Path mapping for cleaner imports.
     "paths": {
-      "@/*": ["./src/*"]
+      "@lib/*": ["./src/lib/*"],
+      "@ui/*": ["./src/ui/*"]
     },
 
     // `vue-tsc --build` produces a .tsbuildinfo file for incremental type-checking.
