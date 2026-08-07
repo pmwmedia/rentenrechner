@@ -43,6 +43,25 @@ jobs:
       - name: Check Types
         run: npm run types:check
 
+  vitest:
+    name: Execute Unit Tests
+    runs-on: ubuntu-24.04
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v6
+
+      - name: Install Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: 26
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Run Unit Tests
+        run: npm run test:run
+
   oxlint:
     name: Lint Code
     runs-on: ubuntu-24.04
