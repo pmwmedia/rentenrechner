@@ -4,6 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "dependencies:install": "npm install",
     "dependencies:update": "npx npm-check-updates -u -c 48h && npm install",
     "vite:run": "vite",
     "vite:build": "vite build",
@@ -14,7 +15,10 @@
     "prettier:fix": "prettier . --write"
   },
   "dependencies": {
-    "vue": "3.5.41"
+    "echarts": "6.1.0",
+    "element-plus": "2.14.3",
+    "vue": "3.5.41",
+    "vue-echarts": "8.1.0"
   },
   "devDependencies": {
     "@tsconfig/node24": "24.0.4",
