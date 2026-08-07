@@ -1,4 +1,10 @@
-export function formatNumber(value: string): string {
+const formatter = Intl.NumberFormat("de-DE")
+
+export function formatNumber(value: string | number): string {
+  if (typeof value === "number") {
+    return formatter.format(value)
+  }
+
   return value.replaceAll(/[^.,0-9]/g, "")
 }
 
