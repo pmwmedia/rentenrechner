@@ -1,0 +1,82 @@
+name: Build
+
+on:
+  - push
+  - pull_request
+
+jobs:
+  build:
+    name: Build WebApp
+    runs-on: ubuntu-24.04
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v6
+
+      - name: Install Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: 26
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Build WebApp
+        run: npm run vite:build
+
+  types:
+    name: Check Types
+    runs-on: ubuntu-24.04
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v6
+
+      - name: Install Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: 26
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Check Types
+        run: npm run types:check
+
+  oxlint:
+    name: Lint Code
+    runs-on: ubuntu-24.04
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v6
+
+      - name: Install Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: 26
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Run Oxlint
+        run: npm run oxlint:check
+
+  prettier:
+    name: Check Style
+    runs-on: ubuntu-24.04
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v6
+
+      - name: Install Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: 26
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Run Prettier
+        run: npm run prettier:check
